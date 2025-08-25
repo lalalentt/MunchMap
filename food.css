@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1e0;
+}
+
+header {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #fcdde8;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+}
+
+header img{
+    height: 100%;
+    border-radius: 0px;
+} 
+
+main {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f4f1e0;
+    display: flex;
+}
+
+img {
+    height: 500px; 
+    width: 500px; 
+    margin: 30px 0px 30px 0px;
+    border-radius: 10px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 130px;
+}
+
+/* 隱藏 radio 按鈕 */
+.main-photo input {
+    display: none;
+}
+
+/* 讓所有照片先隱藏 */
+.display-photo {
+    display: none;
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* 當 radio 被選中時，顯示對應的主照片 */
+.main-photo input:checked + .display-photo {
+    display: block;
+}
+
+/* 小照片區域 */
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* 小照片樣式 */
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+    margin:10px 50px 10px 10px; 
+}
+
+/* 當滑鼠移到小照片上時，讓它變亮 */
+.thumbnail:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.sectiontext{
+    width: 600px;
+    justify-content: center;
+    text-align: center;
+}
